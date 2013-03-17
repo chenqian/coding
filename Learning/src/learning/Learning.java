@@ -17,6 +17,11 @@ public class Learning {
         System.out.println(str);
     }
     
+    static void change(WrapInt i)
+    {
+      i.data++;
+      Show(i.data);
+    }
     public static void main(String[] args) {
         // TODO code application logic here
         Show(Hash_Map.buildMap("tbfghyreesstb"));
@@ -25,5 +30,10 @@ public class Learning {
         Show(BST.IsBST(t));
         
         Show(BST.IsBalance(t));
+        
+        WrapInt test = new WrapInt();
+        test.data = 0;
+        change(test);
+        Show(test.data);
     }
 }
