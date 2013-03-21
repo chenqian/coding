@@ -14,6 +14,7 @@ public class Node {
     
     public Node(Object data){
         this.data = data;
+        this.next = null;
     }
     
     public void AddToTail(Object d){
@@ -34,20 +35,16 @@ public class Node {
         now.next = node;
     }
     
-    public Node DeleteNode(Node head, Object i){
-        Node tmp = head;
-        if(tmp.data==i){
-            return head.next;
-        }
-        
-            while(tmp.next!=null){
-                if(tmp.next.data == i){
-                    tmp.next = tmp.next.next;
-                    return head;
-                }
-                head = head.next;
-            }
-        
-        return null;
-    }
+   public void ShowNode(){
+       Node now = this;
+       if(now.data==null){
+           System.out.println("Null Node !" );
+           return;
+       }
+       while(now.next!=null){
+           System.out.println("Node : "+ now.data.toString() );
+           now = now.next;
+       }
+       System.out.println("Node : "+ now.data.toString() );
+   }
 }

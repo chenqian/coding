@@ -22,6 +22,26 @@ public class Learning {
       i.data++;
       Show(i.data);
     }
+    
+     public static Node DeleteNode(Node head, Object i){
+        Node tmp = head;
+        if(tmp.data==i){
+            return head.next;
+        }
+        //in head and tmp they both contain like a collection of instance nodes
+        //it is passing by reference, then change in tmp will not affect head
+        //but change in Node instance itself will make head change too
+            while(tmp.next!=null){
+                if(tmp.next.data == i){
+                    tmp.next = tmp.next.next;
+                    return head;
+                }
+                tmp = tmp.next;
+            }
+        
+        return null;
+    }
+     
     public static void main(String[] args) {
         // TODO code application logic here
         Show(Hash_Map.buildMap("tbfghyreesstb"));
@@ -35,5 +55,15 @@ public class Learning {
         test.data = 0;
         change(test);
         Show(test.data);
+        
+        Node n  = new Node(1);
+        n.AddToTail(2);
+        n.AddToTail(3);
+        n.AddToTail(4);
+        n.AddToTail(5);
+        n= DeleteNode(n,3);
+        n.ShowNode();
+        n = new Node(null);
+        n.ShowNode();
     }
 }
