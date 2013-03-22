@@ -4,6 +4,8 @@
  */
 package learning;
 
+import java.util.*;
+
 /**
  *
  * @author chen qian
@@ -43,22 +45,54 @@ public class Learning {
 
     public static void main(String[] args) {
 
-        QueueByArray qba = new QueueByArray();
-        for (int i = 0; i < 10; i++) {
-            qba.push(i, 0);
-            qba.push(i * 2, 1);
-            qba.push(i * 3, 2);
-        }
-        for (int i = 0; i < 3; i++) {
-            Object a = qba.pop(i);
-            while (a != null) {
-                System.out.println(a);
-                a = qba.pop(i);
+        StackOfMin som = new StackOfMin();
+            try {
+                som.push(3);
+                System.out.println("Min is : "+som.GetMin());
+                som.push(5);
+                System.out.println("Min is : "+som.GetMin());
+                som.push(6);
+                System.out.println("Min is : "+som.GetMin());
+                som.push(8);
+                System.out.println("Min is : "+som.GetMin());
+                som.push(2);
+                                                System.out.println("Min is : "+som.GetMin());
+                som.push(1);
+                System.out.println("Min is : "+som.GetMin());
+                som.push(1);
+                System.out.println("Min is : "+som.GetMin());
+                som.push(10);
+                System.out.println("Min is : "+som.GetMin());
+                for(int i = 0;i<12;++i){
+                som.pop();
+                System.out.println("Min is 2 : "+som.GetMin());
+                }
+               
+                
+            } catch (Exception ex) {
+                System.out.println(ex.getMessage());
             }
-        }
 
 
 
+//  Test case for queue by array     
+//        QueueByArray qba = new QueueByArray();
+//        for (int i = 0; i < 12; i++) {
+//            try {
+//                qba.push(i, 0);  
+//                qba.push(i * 2, 1);
+//                 qba.push(i * 3, 2);
+//            } catch (Exception ex) {
+//                System.out.println(ex.getMessage());
+//            }         
+//        }
+//        for (int i = 0; i < 3; i++) {
+//            Object a = qba.pop(i);
+//            while (a != null) {
+//                System.out.println(a);
+//                a = qba.pop(i);
+//            }
+//        }
 
         /*
          * // TODO code application logic here

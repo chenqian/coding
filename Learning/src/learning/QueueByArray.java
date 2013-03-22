@@ -14,13 +14,13 @@ public class QueueByArray {
     Object[] Buffer = new Object[3*StackSize];
     int[] Pointer = { -1 , -1 , -1};
     
-    public void push(Object item, int StackNum){
+    public void push(Object item, int StackNum) throws Exception{
         //StackNum should be 0,1,2
         if(StackNum <0 || StackNum >=3){
             System.out.println("StackNum is Invalid!");
             return;
         }
-        if(Pointer[StackNum]== 99){
+        if(Pointer[StackNum]== (StackSize-1)){
             System.out.println("The Stack is full!");
             return;
         }

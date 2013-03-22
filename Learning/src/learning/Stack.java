@@ -24,6 +24,7 @@ public class Stack {
         Node n =  new Node(o);
         n.next = this.top;
         this.top = n;
+        
     }
     
     public Object peek(){
