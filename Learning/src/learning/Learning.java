@@ -4,7 +4,8 @@
  */
 package learning;
 
-import java.util.*;
+import java.util.ArrayList;
+
 
 /**
  *
@@ -44,34 +45,58 @@ public class Learning {
     }
 
     public static void main(String[] args) {
-
-        StackOfMin som = new StackOfMin();
-            try {
-                som.push(3);
-                System.out.println("Min is : "+som.GetMin());
-                som.push(5);
-                System.out.println("Min is : "+som.GetMin());
-                som.push(6);
-                System.out.println("Min is : "+som.GetMin());
-                som.push(8);
-                System.out.println("Min is : "+som.GetMin());
-                som.push(2);
-                                                System.out.println("Min is : "+som.GetMin());
-                som.push(1);
-                System.out.println("Min is : "+som.GetMin());
-                som.push(1);
-                System.out.println("Min is : "+som.GetMin());
-                som.push(10);
-                System.out.println("Min is : "+som.GetMin());
-                for(int i = 0;i<12;++i){
-                som.pop();
-                System.out.println("Min is 2 : "+som.GetMin());
-                }
-               
-                
-            } catch (Exception ex) {
-                System.out.println(ex.getMessage());
-            }
+        
+        
+        
+//        QueueByStack qbs = new QueueByStack();
+//        qbs.Enqueue(1);
+//        qbs.Enqueue(2);
+//        qbs.Enqueue(3);
+//        qbs.Enqueue(4);
+//        qbs.Enqueue(5);
+//        qbs.Enqueue(6);
+//        System.out.println("Dq  : "+qbs.Dequeue());
+//        System.out.println("Dq  : "+qbs.Dequeue());
+//        System.out.println("Dq  : "+qbs.Dequeue());
+//                qbs.Enqueue(4);
+//        qbs.Enqueue(5);
+//        qbs.Enqueue(6);
+//        System.out.println("Dq  : "+qbs.Dequeue());
+//        System.out.println("Dq  : "+qbs.Dequeue());
+//         System.out.println("Dq  : "+qbs.Dequeue());
+//        System.out.println("Dq  : "+qbs.Dequeue());
+//         System.out.println("Dq  : "+qbs.Dequeue());
+//        System.out.println("Dq  : "+qbs.Dequeue());
+//        System.out.println("Dq  : "+qbs.Dequeue());
+        
+        // test case
+//        StackOfMin som = new StackOfMin();
+//            try {
+//                som.push(3);
+//                System.out.println("Min is : "+som.GetMin());
+//                som.push(5);
+//                System.out.println("Min is : "+som.GetMin());
+//                som.push(6);
+//                System.out.println("Min is : "+som.GetMin());
+//                som.push(8);
+//                System.out.println("Min is : "+som.GetMin());
+//                som.push(2);
+//                                                System.out.println("Min is : "+som.GetMin());
+//                som.push(1);
+//                System.out.println("Min is : "+som.GetMin());
+//                som.push(1);
+//                System.out.println("Min is : "+som.GetMin());
+//                som.push(10);
+//                System.out.println("Min is : "+som.GetMin());
+//                for(int i = 0;i<12;++i){
+//                som.pop();
+//                System.out.println("Min is 2 : "+som.GetMin());
+//                }
+//               
+//                
+//            } catch (Exception ex) {
+//                System.out.println(ex.getMessage());
+//            }
 
 
 
