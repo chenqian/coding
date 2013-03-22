@@ -12,11 +12,18 @@ public class Stack {
     Node top;
     
     public Object pop(){
-        Node tmp = top;
-        while(tmp.next!=null){
-            tmp = tmp.next;
-        }
-        return tmp;
+       if(top!=null){
+           Object ret = top.data;
+           top = top.next;
+           return ret;
+       }
+       return null;
+    }
+    
+    public void push(Object o){
+        Node n =  new Node(o);
+        n.next = this.top;
+        this.top = n;
     }
     
     public Object peek(){
