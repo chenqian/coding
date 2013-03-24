@@ -5,7 +5,7 @@
 package learning;
 
 import java.util.ArrayList;
-
+ import java.util.UUID; 
 
 /**
  *
@@ -45,8 +45,18 @@ public class Learning {
     }
 
     public static void main(String[] args) {
+  
         
+
+//    UUID uuid = UUID.randomUUID();
+//    System.out.println(uuid.toString());
+//    String s = uuid.toString();
+//    UUID u = UUID.fromString(s);
+//     System.out.println(u.toString());
+//     if(u.equals(uuid))
+//         System.out.println(u.toString());
         
+//        SortStack.SortStackByStack(SortStack.BuildStack()).top.ShowNode();
         
 //        QueueByStack qbs = new QueueByStack();
 //        qbs.Enqueue(1);
