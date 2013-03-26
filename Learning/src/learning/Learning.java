@@ -44,10 +44,30 @@ public class Learning {
         return null;
     }
 
+    public static void testarray(ArrayList<ArrayList<String>> s){
+        ArrayList<String> k = new ArrayList<String>();
+        k.add("test1");
+        k.add("test2");
+        s.add(k);
+    }
+    
     public static void main(String[] args) {
+int [] n = new int[10];
+int i = n.length;
   
-        
-
+      ArrayList<ArrayList<String>> test = new ArrayList<ArrayList<String>>();
+      testarray(test);
+      int k = 3;
+      int kk=4;
+      int kkk = 2;
+      int t = k/2;
+      int tt = k/2;
+      
+      int j = 5;
+      
+      String s = "abcde";
+      String ss = s.substring(1, 1);
+      String sss = s.substring(0, 1);
 //    UUID uuid = UUID.randomUUID();
 //    System.out.println(uuid.toString());
 //    String s = uuid.toString();
